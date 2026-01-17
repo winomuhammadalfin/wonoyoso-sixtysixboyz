@@ -6,6 +6,7 @@ import { ArrowLeft, Users, Database, Activity, Layers, FileText, CheckCircle2, X
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
+import DatabaseDiagram from "@/components/DatabaseDiagram";
 
 const Documentation = () => {
   return (
@@ -1472,9 +1473,12 @@ InventoryManager ──► Statistics      : InventoryManager returns Statistics
                   </div>
                 </div>
 
-                {/* ERD Diagram */}
-                <div className="bg-secondary/30 rounded-lg p-6 border border-border">
-                  <h4 className="font-semibold mb-4 text-center text-lg">🎨 Entity Relationship Diagram (ERD)</h4>
+                {/* Visual Database Diagram */}
+                <DatabaseDiagram />
+
+                {/* ERD Diagram ASCII */}
+                <div className="bg-secondary/30 rounded-lg p-6 border border-border mt-8">
+                  <h4 className="font-semibold mb-4 text-center text-lg">📝 ERD Format ASCII (Alternatif)</h4>
                   <div className="bg-card rounded-lg p-4 overflow-x-auto">
                     <pre className="text-sm text-foreground whitespace-pre font-mono">
 {`
